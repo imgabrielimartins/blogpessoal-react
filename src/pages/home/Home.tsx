@@ -1,91 +1,23 @@
-import homeImg from "../../assets/img/home.png"
+import home from "../../assets/img/home.png"
 
 function Home() {
   return (
-    <div style={{
-        backgroundColor: "#a2663c",
-        display: 'flex',
-        justifyContent: 'center'
-    }}>
-        <div 
-        style={{
-            display:"grid",
-            gridTemplateColumns: "1fr 1fr",
-            color: "#e6e2d7",
-            width: "100%",
-            maxWidth: "1280px",
-        }}>
-            <div 
-            style={{
-                display: 'flex',
-                flexDirection: "column",
-                gap: "1rem",
-                alignItems: "center",
-                justifyContent: "center",
-                paddingTop: "1rem",
-                paddingBottom: "1rem"
-            }}>
-                <h2
-                    style={{
-                        fontSize: "3rem",
-                        fontWeight: "bold"
-                    }}
-                >
-                    Seja Bem Vinde!
-                </h2>
-
-                <p
-                style={{
-                    fontSize: "1.25rem"
-                }}
-                >
-                    Expresse aqui seus pensamentos e opiniões
-                </p>
-
-                <div 
-                style={{
-                    display: "flex",
-                    justifyContent: "space-around",
-                    gap: "1rem"
-                }}
-                >
-                    <div 
-                    style={{
-                        display: 'flex',
-                        justifyContent: "space-around",
-                        gap:"1rem"
-                    }}
-                    >
-                        <div
-                        style={{
-                            borderRadius: "0.5rem",
-                            color: "#e6e2d7",
-                            border: "2px solid white",
-                            padding: "0.5rem 1rem"
-                        }}>
-
-                            Nova Postagem
-                        </div>
-                    </div>
-                </div>
-            </div>
-                <div
-                style={{
-                    display: "flex",
-                    justifyContent: "end"
-                }}
-                >
-                    <img
-                    src={homeImg}
-                    alt="imagem página home "
-                    style={{
-                        width: "66%"
-                    }}
-                    />
-                </div>
-        </div>
-    </div>
-  )
+    <>
+      <main className="bg-caramel flex justificy-center">
+        <section className="container grid grid-cols-2 text-milk">
+          <article className="flex flex-col gap-4 items-center justify-center py-4">
+             <h1 className="text-5xl font-bold ">Seja Bem Vinde!</h1>
+             <p className="text-x1" >Expresse aqui seus pensamentos e opiniões</p>
+             <button className="rounded text-milk border-matcha border-solid border-2 py-1 px-4">
+                Nova Postagem
+                </button>
+          </article>
+          <figure className="flex justify-center">
+            <img src={home} alt="imagem home" className="w-2/3 ml-auto"/>
+          </figure>
+        </section>
+      </main>
+    </>
+  );
 }
-
-export default Home
+export default Home;

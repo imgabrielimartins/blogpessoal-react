@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthContext";
 import type UsuarioLogin from "../../models/UsuarioLogin";
 import { ClipLoader } from "react-spinners";
-import cadastro from '../../assets/img/cadastro.png'
+import cadastroIMG from '../../assets/img/cadastroimg.png'
 
 function Login() {
 
@@ -15,11 +15,11 @@ function Login() {
         {} as UsuarioLogin
     );
 
-    useEffect(() => {
+     useEffect(() => {
         if (usuario.token !== "") {
-            navigate('/home');
+            navigate('/home')
         }
-    }, [navigate, usuario]);
+    }, [usuario])
 
     function atualizarEstado(e: ChangeEvent<HTMLInputElement>) {
         setUsuarioLogin({
@@ -29,9 +29,11 @@ function Login() {
     }
 
     function logar(e: ChangeEvent<HTMLFormElement>) {
-        e.preventDefault();
-        handleLogin(usuarioLogin); 
-    }
+  e.preventDefault();
+  console.log("Dados enviados para login:", usuarioLogin);
+  handleLogin(usuarioLogin);
+}
+
 
     return (
         <div className='grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold'>
@@ -99,7 +101,7 @@ function Login() {
             </form>
 
             <div
-                style={{ backgroundImage: `url(${cadastro})` }}
+                style={{ backgroundImage: `url(${cadastroIMG})` }}
                 className='lg:block hidden bg-no-repeat w-full min-h-screen bg-cover bg-center'
             >
             </div>

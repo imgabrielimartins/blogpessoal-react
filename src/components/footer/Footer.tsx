@@ -4,14 +4,14 @@ import { AuthContext } from "../../contexts/AuthContext"
 
 function Footer () {
     
-    const data = new Date().getFullYear()
+    let data = new Date().getFullYear()
     const { usuario } = useContext(AuthContext)
 
     let component: ReactNode
 
-    if (usuario.token !== '') {
+    if (usuario.token !== "") {
         component = (
-            <footer className="flex justify-center bg-matcha text-coffee">
+            <footer className="flex justify-center bg-matcha text-coffee mt-0 ">
                 <div className="container flex flex-col items-center py-4">
                     <p className="text-xl font-bold">
                         Blog Pessoal Generation | Copyright: {data}
@@ -51,7 +51,11 @@ function Footer () {
         )
     }
 
-    return <>{component}</>
+    return (
+    <>
+        {component}
+    </>
+    )
 }
 
 export default Footer

@@ -16,7 +16,7 @@ function Navbar() {
 
     let component: ReactNode
 
-    if(usuario.token !== '') {
+    if(usuario.token !== "") {
         component = ( 
 
 <nav className="w-full flex justify-center py-4 bg-cream text-coffee">

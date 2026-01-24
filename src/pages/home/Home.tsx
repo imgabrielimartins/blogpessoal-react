@@ -1,11 +1,11 @@
-import home from "../../assets/img/home.png";
+import homeIMG from "../../assets/img/homeimg.png";
 import ListaPostagens from "../../components/postagem/listapostagens/ListaPostagem";
 import ModalPostagem from "../../components/postagem/modalpostagem/ModalPostagem";
 
 function Home() {
   return (
     <>
-      <main className="bg-caramel flex justify-center">
+      <main className="bg-caramel flex justify-center mb-0">
         <section className="container grid grid-cols-1 md:grid-cols-2 text-milk">
 
           <article className="flex flex-col gap-4 items-center justify-center py-4">
@@ -22,7 +22,7 @@ function Home() {
 
           <figure className="flex justify-center">
             <img
-              src={home}
+              src={homeIMG}
               alt="Imagem da página inicial"
               className="w-2/3"
             />

@@ -1,5 +1,4 @@
 import Popup from 'reactjs-popup';
-
 import 'reactjs-popup/dist/index.css';
 import FormPostagem from '../formpostagem/FormPostagem';
 
@@ -15,8 +14,11 @@ function ModalPostagem() {
                 }
                 modal
                 contentStyle={{
+                    background: '#ABBF9B', 
                     borderRadius: '1rem',
-                    paddingBottom: '2rem'
+                    paddingBottom: '2rem',
+                    boxShadow: '0 0 32px rgba(171,191,155,0.45)',
+                    border: '1px solid rgb(137,153,124)'
                 }}
             >
                 <FormPostagem />

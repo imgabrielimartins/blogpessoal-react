@@ -17,7 +17,7 @@ function DeletarPostagem() {
     const { usuario, handleLogout } = useContext(AuthContext)
     const token = usuario.token
 
-    async function buscarPorId(id: string) {
+     async function buscarPorId(id: string) {
         try {
             await buscar(`/postagens/${id}`, setPostagem, {
                 headers: {
@@ -38,7 +38,7 @@ function DeletarPostagem() {
         }
     }, [token])
 
-    useEffect(() => {
+     useEffect(() => {
         if (id !== undefined) {
             buscarPorId(id)
         }

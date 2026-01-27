@@ -60,7 +60,7 @@ function CardPostagem({ postagem }: CardPostagensProps) {
                 </Link>
             </div>
         </div>
-    )
+    );
 }
 
 export default CardPostagem

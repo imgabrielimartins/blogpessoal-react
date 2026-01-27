@@ -4,6 +4,7 @@ import { AuthContext } from "../../../contexts/AuthContext"
 import type Postagem from "../../../models/Postagem"
 import { buscar, deletar } from "../../../services/Services"
 import { ClipLoader } from "react-spinners"
+import { ToastAlerta } from "../../../utils/ToastAlerta";
 
 function DeletarPostagem() {
 
@@ -21,9 +22,9 @@ function DeletarPostagem() {
         try {
             await buscar(`/postagens/${id}`, setPostagem, {
                 headers: {
-                    'Authorization': token
-                }
-            })
+                    Authorization: token
+                },
+            });
         } catch (error: any) {
             if (error.toString().includes('401')) {
                 handleLogout()
@@ -33,16 +34,16 @@ function DeletarPostagem() {
 
     useEffect(() => {
         if (token === '') {
-            alert('Você precisa estar logado')
+            ToastAlerta('Você precisa estar lo gado', 'erro');
             navigate('/')
         }
-    }, [token])
+    }, [token]);
 
      useEffect(() => {
         if (id !== undefined) {
             buscarPorId(id)
         }
-    }, [id])
+    }, [id]);
 
     async function deletarPostagem() {
         setIsLoading(true)
@@ -50,17 +51,16 @@ function DeletarPostagem() {
         try {
             await deletar(`/postagens/${id}`, {
                 headers: {
-                    'Authorization': token
-                }
-            })
+                    Authorization: token
+                },
+            });
 
-            alert('Postagem apagada com sucesso')
-
+            ToastAlerta('Postagem apagada com sucesso','sucesso')
         } catch (error: any) {
             if (error.toString().includes('401')) {
                 handleLogout()
             }else {
-                alert('Erro ao deletar a postagem.')
+                ToastAlerta('Erro ao deletar a postagem.','erro')
             }
         }
 

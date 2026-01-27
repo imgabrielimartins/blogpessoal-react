@@ -1,73 +1,98 @@
-# React + TypeScript + Vite
+🌐 Blog Pessoal – Gabrieli Martins
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o meu projeto de Blog Pessoal Full Stack, desenvolvido com foco em prática de autenticação, consumo de API, CRUD completo e organização de arquitetura em aplicações modernas.
 
-Currently, two official plugins are available:
+O projeto simula uma plataforma onde usuários podem se cadastrar, autenticar e gerenciar postagens.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Tecnologias Utilizadas
 
-## React Compiler
+Front-end
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React
 
-## Expanding the ESLint configuration
+TypeScript
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Vite
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Axios
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Context API
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+React Router DOM
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Tailwind
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Back-end
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+API REST
+
+Autenticação com Token
+
+Banco de dados relacional
+
+Deploy
+
+Front-end: Vercel
+
+Back-end: Render 
+
+🔐 Funcionalidades
+
+Cadastro de usuário
+
+Login com autenticação via token
+
+Logout
+
+CRUD de postagens:
+
+Criar
+
+Listar
+
+Atualizar
+
+Deletar
+
+Proteção de rotas privadas
+
+Feedback visual com alertas
+
+Loading states durante requisições
+
+
+🎯 Objetivo do Projeto
+
+Este projeto foi desenvolvido com foco em:
+
+Prática de autenticação com token
+
+Estruturação de contexto global com Context API
+
+Organização de serviços para requisições HTTP
+
+Boas práticas com TypeScript
+
+Preparação para deploy em ambiente real
+
+👩‍💻 Sobre Mim
+
+Sou Gabrieli Martins, Desenvolvedora FullStack com foco em:
+
+JavaScript
+
+TypeScript
+
+React
+
+Node.js
+
+APIs REST
+
+Banco de Dados
+
+📎 Contato
+
+GitHub: https://github.com/imgabrielimartins
+
+LinkedIn: https://www.linkedin.com/in/gabrielimartinsdev/

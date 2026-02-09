@@ -39,7 +39,7 @@ src/
  └── App.tsx
 ```
 
-⚙️ Como Executar o Projeto
+#⚙️ Como Executar o Projeto
 
 # Clonar o repositório
 ```

@@ -4,17 +4,6 @@ Este projeto foi desenvolvido com o objetivo de aplicar na prática meus conheci
 
 ---
 
-## 🧠 Conceitos Aplicados
-
-- Componentização e reutilização de código  
-- Arquitetura organizada por pastas  
-- Responsividade (Mobile First)  
-- Gerenciamento de estado  
-- Performance e otimização  
-- Boas práticas com Git e versionamento  
-
----
-
 ## 🚀 Tecnologias Utilizadas
 
 - React  

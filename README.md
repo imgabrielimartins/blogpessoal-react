@@ -38,33 +38,6 @@ src/
  ├── hooks/
  └── App.tsx
 ```
-
-#⚙️ Como Executar o Projeto
-
-# Clonar o repositório
-```
-git clone https://github.com/seu-usuario/blogpessoal-react.git
-```
-# Acessar a pasta do projeto
-```
-cd nome-do-projeto
-```
-
-# Instalar dependências
-```
-npm install
-```
-
-# Executar em ambiente de desenvolvimento
-```
-npm run dev
-```
-
-O projeto estará disponível em:
-```
-http://localhost:5173
-```
-
 ---
 
 🎨 Funcionalidades

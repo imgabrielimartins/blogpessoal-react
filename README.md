@@ -1,98 +1,54 @@
-🌐 Blog Pessoal – Gabrieli Martins
+# ✨ Personal Blog
 
-Este é o meu projeto de Blog Pessoal Full Stack, desenvolvido com foco em prática de autenticação, consumo de API, CRUD completo e organização de arquitetura em aplicações modernas.
+Um blog pessoal desenvolvido para compartilhar meus aprendizados, projetos e experiências na área de tecnologia.  
+Este projeto representa minha evolução como desenvolvedora e meu compromisso com código limpo, organização e boas práticas.
 
-O projeto simula uma plataforma onde usuários podem se cadastrar, autenticar e gerenciar postagens.
+---
 
-🚀 Tecnologias Utilizadas
+## 📖 Sobre o Projeto
 
-Front-end
+O **Personal Blog** foi criado com o objetivo de centralizar conteúdos sobre:
 
-React
+- Desenvolvimento Front-End  
+- React e TypeScript  
+- Projetos práticos  
+- Dicas de carreira em tecnologia  
+- Reflexões sobre minha jornada como dev  
 
-TypeScript
+Além de ser uma plataforma de conteúdo, o projeto também funciona como laboratório prático para aplicar conceitos modernos de desenvolvimento web.
 
-Vite
+---
 
-Axios
+## 🚀 Tecnologias Utilizadas
 
-Context API
+- React  
+- TypeScript  
+- Vite  
+- CSS / Styled Components / Tailwind (ajuste conforme o que você utiliza)  
+- React Router  
+- Consumo de APIs (se aplicável)
 
-React Router DOM
+---
 
-Tailwind
+## 🧠 Conceitos Aplicados
 
-Back-end
+- Componentização e reutilização de código  
+- Arquitetura organizada por pastas  
+- Responsividade (Mobile First)  
+- Gerenciamento de estado  
+- Performance e otimização  
+- Boas práticas com Git e versionamento  
 
-API REST
+---
 
-Autenticação com Token
+## 📂 Estrutura do Projeto
 
-Banco de dados relacional
-
-Deploy
-
-Front-end: Vercel
-
-Back-end: Render 
-
-🔐 Funcionalidades
-
-Cadastro de usuário
-
-Login com autenticação via token
-
-Logout
-
-CRUD de postagens:
-
-Criar
-
-Listar
-
-Atualizar
-
-Deletar
-
-Proteção de rotas privadas
-
-Feedback visual com alertas
-
-Loading states durante requisições
-
-
-🎯 Objetivo do Projeto
-
-Este projeto foi desenvolvido com foco em:
-
-Prática de autenticação com token
-
-Estruturação de contexto global com Context API
-
-Organização de serviços para requisições HTTP
-
-Boas práticas com TypeScript
-
-Preparação para deploy em ambiente real
-
-👩‍💻 Sobre Mim
-
-Sou Gabrieli Martins, Desenvolvedora FullStack com foco em:
-
-JavaScript
-
-TypeScript
-
-React
-
-Node.js
-
-APIs REST
-
-Banco de Dados
-
-📎 Contato
-
-GitHub: https://github.com/imgabrielimartins
-
-LinkedIn: https://www.linkedin.com/in/gabrielimartinsdev/
+```bash
+src/
+ ├── assets/
+ ├── components/
+ ├── pages/
+ ├── routes/
+ ├── styles/
+ ├── hooks/
+ └── App.tsx

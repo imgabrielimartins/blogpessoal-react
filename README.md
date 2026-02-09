@@ -26,20 +26,6 @@ Este projeto foi desenvolvido com o objetivo de aplicar na prática meus conheci
 
 ---
 
-## 📂 Estrutura do Projeto
-
-```bash
-src/
- ├── assets/
- ├── components/
- ├── pages/
- ├── routes/
- ├── styles/
- ├── hooks/
- └── App.tsx
-```
----
-
 🎨 Funcionalidades
 
 Página inicial com apresentação
